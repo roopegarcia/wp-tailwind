@@ -19,7 +19,7 @@ alert(s);
 --
 
 <a href="https://youtu.be/2e_yXGgwrUE?feature=shared
-" target="_blank"><img src="https://github.com/roopegarcia/wp-tailwind/blob/master/img/dl.jpg" 
+" target="_blank"><img src="https://github.com/roopegarcia/wp-tailwind/blob/master/img/dl.jpeg" 
 alt="markdown test youtube link alt-text" width="240" height="180" border="10" /></a>
 
 
