@@ -1,0 +1,44 @@
+.header-main {
+}
+
+.vertical-navigation {
+  position: absolute;
+  writing-mode: vertical-rl;
+  display: flex;
+  justify-content: center;
+
+  .menu {
+    display: flex;
+
+    ul {
+      display: flex;
+      height: 30rem;
+      gap: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .vertical-navigation {
+    position: relative;
+    writing-mode: lr;
+
+    .menu {
+      ul {
+        height: 2.2rem;
+        
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    
+  }
+}
+
+.current_page_item {
+  text-decoration: underline;
+  color: #00c2d9;
+}

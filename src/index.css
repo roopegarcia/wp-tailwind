@@ -1,5 +1,10 @@
 @import "../css/base/baseline.scss";
+@import "../css/base/variables.scss";
+@import "../css/base/header.scss";
+@import "../css/base/footer.scss";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+

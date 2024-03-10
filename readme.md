@@ -22,10 +22,13 @@ alert(s);
 <figcaption>Image here with height auto and max-width: 100% to prevent twisting and uglyness... 🥳</figcaption>
 </figure>
 
-The following image is a link:
+<br />
+
+The following image is a link:...
+
 <a href="https://youtu.be/2e_yXGgwrUE?feature=shared
 " target="_blank"><img src="https://github.com/roopegarcia/wp-tailwind/blob/master/img/youtube-logo.png" 
-alt="markdown test youtube link alt-text" width="240" height="180" border="10" /></a>
+alt="markdown test youtube link alt-text" width="100%" height="auto" border="10" /></a>
 
 <a href="https://www.markdownguide.org" target="_blank">Learn Markdown NoW!</a>
 

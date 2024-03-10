@@ -1,5 +1,7 @@
-<div class="border-t mt-4 py-4">
-  <div class="max-w-4xl px-4 mx-auto text-xs text-gray-400">Your footer content here.</div>
+<div class="footer mt-4 py-4">
+  <div class="max-w-4xl px-4 mx-auto text-xs text-gray-400">
+    <p class="amazing-footer-class">This is amazing custom class two</p>
+  </div>
 </div>
 
 <?php wp_footer(); ?>
