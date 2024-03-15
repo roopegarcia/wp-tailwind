@@ -23,3 +23,41 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
+function my_login_logo() { ?>
+  <style type="text/css">
+      .login {
+        background-color: #000000;
+      }
+      #login {
+        padding: 0;
+        background-color: #000000;
+      }
+      #login .message {
+        background: #000000;
+        border-left: 0;
+        color: #ffffff;
+      }
+      #loginform .button-primary {
+        background: #000000;
+        border-color: #ffffff;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: none;
+        text-transform: uppercase;
+      }
+      #loginform {
+        background: #000000;
+        color: #ffffff;
+        border: 0;
+      }
+      #login h1 a, .login h1 a {
+          background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/login-logo.svg);
+          height:250px;
+          width:250px;
+          background-size: 250px;
+          background-repeat: no-repeat;
+        }
+  </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );

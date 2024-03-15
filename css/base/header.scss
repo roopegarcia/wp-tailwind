@@ -1,20 +1,24 @@
-.header-main {
+.site-header {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+}
+
+.site-header__branding {
+  display: flex;
 }
 
 .vertical-navigation {
-  position: absolute;
+  position: fixed;
   writing-mode: vertical-rl;
   display: flex;
   justify-content: center;
 
   .menu {
     display: flex;
+    gap: 1.5rem;
 
-    ul {
-      display: flex;
-      height: 30rem;
-      gap: 1.5rem;
-    }
   }
 }
 
@@ -41,4 +45,17 @@
 .current_page_item {
   text-decoration: underline;
   color: #00c2d9;
+}
+
+/* Pivot button rotate */
+.pivot-content {
+  transform-origin: 420px 573px;
+  transform: rotate(17deg);
+  transition: transform 0.35s ease-in-out;
+}
+
+.pivot-content__reset {
+  transform-origin: 420px 573px;
+  transform: rotate(0deg);
+  transition: transform 0.35s all;
 }
