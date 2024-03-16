@@ -50,12 +50,12 @@
 /* Pivot button rotate */
 .pivot-content {
   transform-origin: 420px 573px;
-  transform: rotate(17deg);
+  transform: rotate(0deg);
   transition: transform 0.35s ease-in-out;
 }
 
 .pivot-content__reset {
   transform-origin: 420px 573px;
-  transform: rotate(0deg);
+  transform: rotate(18deg);
   transition: transform 0.35s all;
 }

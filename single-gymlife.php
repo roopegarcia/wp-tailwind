@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="max-w-4xl mx-auto px-4">
+<div class="max-w-4xl mx-auto px-4 prose">
   <h1>Hey, this is a single-gymlife.php, not a post.</h1>
   <?php if (have_posts()) {
     while(have_posts()) {
