@@ -6,15 +6,14 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-  <div class="sm mx-auto site-header pivot-content">
+  <div class="p-10 mx-auto site-header pivot-content">
   <div class="site-header__branding">
     <a href="<?php echo esc_url(home_url('/')); ?>" class="site-header__title" rel="home" itemprop="headline">
       <img class="site-header__logo skew-x-12" width="300" height="100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bttw-logo.png" loading="lazy" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" />
     </a>
   </div>
-  <button class="pivot px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-black" type="submit">
-    Pivot
-  </button>
+  <button href="#" class="pivot font-mono uppercase steve-button">pivot</button>
+  <!-- <button class="pivot px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-black" type="submit">Pivot</button> -->
 </div>
 
     <!-- <div class="header-main max-w-4xl mx-auto px-4">

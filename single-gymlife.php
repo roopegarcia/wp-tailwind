@@ -9,13 +9,13 @@
       <?php the_post_thumbnail('medium', array(
           'class' => 'h-48 w-full object-cover md:h-full md:w-48')); 
           ?>
-
-        <a href="#" class="underline hover:underline">Tailwind underline</a>
         <h1><?php the_title(); ?></h1>
         <?php the_content(); ?>
       </div>
     <?php }
   } ?>
+  <a href="<?php echo get_post_type_archive_link('gymlife'); ?>"><button class="goback-arrow mt-5 mb-5 p-2"></button></a>
 </div>
+
 
 <?php get_footer(); ?>

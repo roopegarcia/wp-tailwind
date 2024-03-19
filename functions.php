@@ -24,6 +24,14 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+/* Change [...] read more to a link */
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+  global $post;
+return '<br /><a class="moretag" href="'. get_permalink($post->ID) . '"> Read all about it...</a><br />';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 function my_login_logo() { ?>
   <style type="text/css">
       .login {

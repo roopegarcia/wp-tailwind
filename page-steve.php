@@ -19,7 +19,7 @@
 
 <hr />
 
-<div class="flex p-6 font-mono">
+<div class="max-w-4xl mx-auto flex p-6 font-mono">
   <div class="flex-none w-48 mb-10 relative z-10 before:absolute before:top-1 before:left-1 before:w-full before:h-full before:bg-teal-400">
     <img src="<?php echo get_stylesheet_directory_uri() . '/img/retro-shoe.jpg'; ?>" class="absolute z-10 inset-0 w-full h-full object-cover rounded-lg" />
   </div>
