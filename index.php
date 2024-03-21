@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <div class="prose max-w-4xl mx-auto flex-auto p-6 font-mono">
   <h1 class="mb-10">My amazing posts... Read all about 'em</h1>
+  
 </div>
 
 <?php if (have_posts()) {
@@ -12,11 +13,11 @@
   <div class="flex-none w-48 mb-10 relative z-10 before:absolute before:top-1 before:left-1 before:w-full before:h-full before:bg-teal-400">
     <!-- <img src="<?php echo get_stylesheet_directory_uri() . '/img/retro-shoe.jpg'; ?>" class="absolute z-10 inset-0 w-full h-full object-cover rounded-lg" /> -->
     <?php the_post_thumbnail('medium', array(
-      'class' => 'absolute z-10 inset-0 w-full h-full object-cover rounded-lg')); 
+      'class' => 'absolute z-10 inset-0 w-full h-full object-cover')); 
     ?>
   </div>
   <form class="flex-auto pl-6">
-    <div class="relative flex flex-wrap items-baseline pb-6 before:bg-black before:absolute before:-top-6 before:bottom-0 before:-left-60 before:-right-6">
+    <div class="relative flex flex-wrap items-baseline pb-6 before:bg-black before:absolute before:-top-6 before:bottom-0 before:-left-60 before:-right-5">
       <h1 class="relative w-full flex-none mb-2 text-2xl font-semibold text-white">
         <a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a>
       </h1>

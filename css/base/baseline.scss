@@ -10,3 +10,20 @@
     
   }
 }
+
+/* WP classes */ 
+.wp-block-button {
+  a {
+    text-decoration: none;
+  }
+}
+
+.wp-block-latest-posts__post-title {
+  font-family: "ui-monospace", monospace;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.wp-block-latest-posts__list li {
+  padding-left: 0;
+}

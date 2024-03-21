@@ -6,18 +6,13 @@
     while(have_posts()) {
       the_post(); ?>
       <div>
-
-<h3>Posted in</h3>
-<?php
-$categories = get_the_category();
-$category_list = join( ', ', wp_list_pluck( $categories, 'name' ) );
-
-echo wp_kses_post( $category_list );
-?>
       <?php the_post_thumbnail('full', array(
           'class' => 'max-w-4xl mx-auto')); 
           ?>
         <div class="prose"><?php the_content(); ?></div>
+        <!-- <p class="goback-arrow mt-5 mb-5 p-2 steve-button text-white"><?php echo get_the_category_list(', ') ?></p> -->
+        <button class="font-mono uppercase goback-arrow mt-5 mb-5 p-2"><?php the_category(',  '); ?></button>
+
       </div>
     <?php }
   } ?>

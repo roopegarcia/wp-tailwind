@@ -69,6 +69,10 @@
   position: relative;
   text-decoration: none;
   transform: translate(-3px, -3px);
+
+  a {
+    text-decoration: none !important;
+  }
 }
 
 .steve-button:active {
@@ -106,5 +110,6 @@
   width: 100%;
   top: 5px;
   left: 3px;
+  padding-right: 0.5rem;
   z-index: -1;
 }
