@@ -19,3 +19,22 @@
   left: 3px;
   z-index: 9;
 }
+
+.footer-content {
+  display: flex;
+  align-items: cent;
+  justify-content: center;
+}
+
+.footer-content__inner {
+  display: flex;
+  align-items: cent;
+  justify-content: center;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: cent;
+  justify-content: center;
+  gap: 1.5rem;
+}

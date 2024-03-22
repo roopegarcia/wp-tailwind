@@ -1,9 +1,9 @@
-@import "../css/base/baseline.scss";
 @import "../css/base/variables.scss";
 @import "../css/base/header.scss";
 @import "../css/base/footer.scss";
 @import "../css/base/modal.scss";
-@import "../css/base/typography.scss";
+@import "../css/base/posts.scss";
+@import "../css/base/pages.scss";
 
 @tailwind base;
 @tailwind components;

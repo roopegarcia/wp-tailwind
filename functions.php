@@ -14,6 +14,9 @@ function boilerplate_add_support() {
 
 add_action('after_setup_theme', 'boilerplate_add_support');
 
+add_image_size( 'banner', 1920, 9999 ); //300 pixels wide (and unlimited height)
+
+
 function register_my_menus() {
   register_nav_menus(
     array(
@@ -68,4 +71,5 @@ function my_login_logo() { ?>
         }
   </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+add_action( 'login_enqueue_scripts', 'my_login_logo' ); ?>
+

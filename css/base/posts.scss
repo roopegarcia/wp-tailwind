@@ -1,0 +1,45 @@
+.post-container {
+  img {
+    height: 40vh;
+    max-width: 100%;
+    object-fit: cover;
+    border: 4px solid rgb(44, 49, 134);
+
+  }
+  border: 4px solid sandybrown;
+}
+
+.paginate-archive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .next::after {
+    content: url('../img/right-arrow.svg');
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    top: 4px;
+    left: 3px;
+    padding-right: 0.5rem;
+    z-index: -1;
+  }
+
+  .prev::after {
+    content: url('../img/left-arrow-alt.svg');
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    top: 4px;
+    left: 3px;
+    padding-right: 0.5rem;
+    z-index: -1;
+  }
+}
+
+.page-numbers.current {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

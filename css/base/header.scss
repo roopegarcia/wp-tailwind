@@ -10,6 +10,8 @@
 }
 
 .vertical-navigation {
+  position: absolute;
+  top: 2rem;
   position: fixed;
   writing-mode: vertical-rl;
   display: flex;
@@ -108,8 +110,44 @@
   height: 100%;
   position: relative;
   width: 100%;
-  top: 5px;
+  top: 4px;
   left: 3px;
   padding-right: 0.5rem;
+  z-index: -1;
+}
+
+.wp-block-button__link {
+  background: #000000;
+  color: #fff;
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;;
+  padding: 15px 20px 14px;
+  position: relative;
+  text-decoration: none;
+  transform: translate(-3px, -3px);
+  font-size: 1.125rem !important;
+
+  a {
+    
+  }
+}
+
+.wp-block-button__link:active {
+  transform: translate(0, 0);
+}
+
+.wp-block-button__link:active::after {
+  transform: translate(-4px, -6px);
+}
+
+.wp-block-button__link::after {
+  border: 1px solid #000000;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  left: 3px;
   z-index: -1;
 }

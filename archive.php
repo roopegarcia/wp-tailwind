@@ -1,13 +1,25 @@
 <?php get_header(); ?>
+<div class="prose max-w-4xl mx-auto flex-auto p-6 font-mono">
+  <h1 class="mb-10">Archive... Read all about 'em</h1>
+  
+</div>
+
+<?php if (have_posts()) {
+      while(have_posts()) {
+        the_post(); ?>
 
 <div class="max-w-4xl mx-auto flex p-6 font-mono">
+ 
   <div class="flex-none w-48 mb-10 relative z-10 before:absolute before:top-1 before:left-1 before:w-full before:h-full before:bg-teal-400">
-    <img src="<?php echo get_stylesheet_directory_uri() . '/img/retro-shoe.jpg'; ?>" class="absolute z-10 inset-0 w-full h-full object-cover rounded-lg" />
+    <!-- <img src="<?php echo get_stylesheet_directory_uri() . '/img/retro-shoe.jpg'; ?>" class="absolute z-10 inset-0 w-full h-full object-cover rounded-lg" /> -->
+    <?php the_post_thumbnail('medium', array(
+      'class' => 'absolute z-10 inset-0 w-full h-full object-cover')); 
+    ?>
   </div>
   <form class="flex-auto pl-6">
-    <div class="relative flex flex-wrap items-baseline pb-6 before:bg-black before:absolute before:-top-6 before:bottom-0 before:-left-60 before:-right-6">
+    <div class="relative flex flex-wrap items-baseline pb-6 before:bg-black before:absolute before:-top-6 before:bottom-0 before:-left-60 before:-right-5">
       <h1 class="relative w-full flex-none mb-2 text-2xl font-semibold text-white">
-        Retro Shoe
+        <a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a>
       </h1>
       <div class="relative text-lg text-white">
         $89.00
@@ -70,5 +82,38 @@
     </p>
   </form>
 </div>
+<?php }
+    } ?>
+
+    <div class="paginate-archive max-w-4xl mx-auto flex p-6 font-mono">
+      <!-- Put this where you want the paginate_links to appear -->
+      <?php echo paginate_links( array(
+
+      'prev_text' => '<span></span>',
+      'next_text' => '<span></span>'
+
+      )); ?>
+    </div>
+
+  <!-- <div class="container-main__gymlife prose mx-auto">
+    <?php if (have_posts()) {
+      while(have_posts()) {
+        the_post(); ?>
+        <div class="container-card max-w-5xl">
+    <div class="lorem columns-2">
+        <?php the_title(); ?>
+        <?php the_post_thumbnail('medium', array(
+            'class' => 'h-48 w-full object-cover md:h-full md:w-48 rotate-12 aspect-square')); 
+            ?>
+          <?php the_excerpt(); ?>
+
+        </div>
+        </div>
+      <?php }
+    } ?>
+
+    <div class="nav-previous alignleft"><?php previous_posts_link( 'Older posts' ); ?></div>
+<div class="nav-next alignright"><?php next_posts_link( 'Newer posts' ); ?></div>
+</div> -->
 
 <?php get_footer(); ?>
