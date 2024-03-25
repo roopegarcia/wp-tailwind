@@ -10,6 +10,7 @@
 }
 
 .vertical-navigation {
+  margin-top: 2rem;
   position: absolute;
   top: 2rem;
   position: fixed;
@@ -28,6 +29,7 @@
   .vertical-navigation {
     position: relative;
     writing-mode: lr;
+    top: 1rem;
 
     .menu {
       ul {
@@ -38,7 +40,11 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  .vertical-navigation {
+    top: 1rem;
+  }
+
   body {
     
   }
@@ -86,7 +92,7 @@
 }
 
 .steve-button::after {
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   content: "";
   display: block;
   height: 100%;
@@ -98,10 +104,14 @@
 }
 
 .goback-arrow {
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  a {
+    text-decoration: none;
+  }
 }
 
 .goback-arrow::before {
@@ -141,7 +151,7 @@
 }
 
 .wp-block-button__link::after {
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   content: "";
   display: block;
   height: 100%;

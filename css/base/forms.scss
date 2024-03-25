@@ -1,0 +1,54 @@
+#gform_1 {
+  background-color: #dedede;
+  padding: 1rem;
+}
+
+.gfield_label {
+  font-weight: 700;
+}
+
+.gform_wrapper {
+  /* border: 4px solid goldenrod; */
+}
+
+#input_1_8 {
+  flex-direction: row;
+  justify-content: center;
+}
+
+#field_1_5, #field_1_3, #field_1_8 {
+  .gfield_label {
+    justify-content: center;
+    font-weight: 700;
+  }
+}
+
+.gform-theme--foundation .gform_footer, .gform-theme--foundation .gform_page_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gform-theme-form-footer-gap);
+  margin-block-start: var(--gform-theme-form-footer-margin-block-start);
+}
+
+#gform_submit_button_1 {
+  text-transform: uppercase;
+  background-color: #000;
+  padding: 1rem 2rem;
+  border-radius: 0 !important;
+}
+
+.gform-theme--framework .gform-field-label--type-inline {
+  margin-left: 0 !important;
+}
+
+#input_1_6_1 {
+  margin-left: 1.2rem !important;
+}
+
+#conf-button {
+  text-transform: uppercase;
+  background-color: #000;
+  padding: 1rem 2rem;
+  border-radius: 0 !important;
+}

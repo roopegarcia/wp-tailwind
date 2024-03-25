@@ -3,7 +3,9 @@
 @import "../css/base/footer.scss";
 @import "../css/base/modal.scss";
 @import "../css/base/posts.scss";
+@import "../css/base/contact.scss";
 @import "../css/base/pages.scss";
+@import "../css/base/forms.scss";
 
 @tailwind base;
 @tailwind components;

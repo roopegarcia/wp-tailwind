@@ -1,3 +1,7 @@
+.footer {
+  background-color: rgb(45 212 191);
+}
+
 .instagram-icon::after {
   content: url('../img/icon-instagram.svg');
   display: block;
@@ -37,4 +41,11 @@
   align-items: cent;
   justify-content: center;
   gap: 1.5rem;
+}
+
+.copyright {
+  /* text-shadow: rgb(0, 0, 0) 3px 3px 0px; */
+  /* font-family: adineuePRO-Cond-Bold; */
+  /*font-size: 35px; */
+  text-transform: uppercase;
 }

@@ -3,10 +3,10 @@
     height: 40vh;
     max-width: 100%;
     object-fit: cover;
-    border: 4px solid rgb(44, 49, 134);
+    /* border: 4px solid rgb(44, 49, 134); */
 
   }
-  border: 4px solid sandybrown;
+  /* border: 4px solid sandybrown; */
 }
 
 .paginate-archive {
@@ -42,4 +42,11 @@
 .page-numbers.current {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.moretag {
+  display: block;
+  padding: 1rem 0;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
 }

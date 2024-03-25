@@ -36,20 +36,7 @@ class Modal {
   injectHTML() {
     document.body.insertAdjacentHTML('beforeend', `
     
-    <div class="modal">
-        <div class="modal__inner">
-          <h2 class="font-mono mb-5 uppercase text-black-400 text-5xl font-semibold">Disclaimer <br /></h2>
-          <div class="wrapper wrapper--narrow">
-            <p class="mb-5 modal__description">This website contains partial nudity and hot pictures of a very handsome man. You do NOT need to feel bad about yourself. Take it as it is. If it was easy, everyone would look like that. </p>
-          </div>
     
-          <div class="footer-social-icons">
-            <a href="https://instagram.com/ballstothewall.fi" target="_blank" class="instagram-icon"></a>
-            <a href="https://www.youtube.com/channel/UCVn44eVpTGYNtvxgR_LqZcg" target="_blank" class="youtube-icon"></a>
-          </div>
-        </div>
-        <div class="modal__close">X</div>
-      </div>
     `)
   }
 }
