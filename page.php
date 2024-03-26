@@ -8,7 +8,7 @@
       the_post(); ?>
       <div class="class-tba">
         <!-- <h2 class="">page.php</h2> -->
-        <h1 class="text-center font-mono border-2 p-10 mb-8 uppercase border-black bg-gradient-to-r from-purple-500 to-pink-500 text-black"><?php the_title(); ?></h1>
+        <h1 class="text-center border-2 p-10 mb-8 uppercase border-black bg-gradient-to-r from-purple-500 to-pink-500 text-black"><?php the_title(); ?></h1>
         <?php the_post_thumbnail('banner', array(
             'class' => 'steve')); 
             ?>

@@ -1,6 +1,6 @@
 .site-header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 2rem;
   align-items: center;
 }
@@ -9,7 +9,13 @@
   display: flex;
 }
 
-.vertical-navigation {
+.site-header__inner {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* .vertical-navigation weird bug with MacBook Safari with vertical-rl text{
   margin-top: 2rem;
   position: absolute;
   top: 2rem;
@@ -23,6 +29,15 @@
     gap: 1.5rem;
 
   }
+} */
+
+.vertical-navigation {
+  /* border: 2px solid deeppink; */
+}
+
+#menu-main-menu {
+  display: flex;
+  gap: 1rem;
 }
 
 @media (max-width: 960px) {
@@ -47,6 +62,13 @@
 
   body {
     
+  }
+}
+
+
+@media (max-width: 900px) {
+  .site-header {
+    display: block;
   }
 }
 

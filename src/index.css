@@ -6,6 +6,7 @@
 @import "../css/base/contact.scss";
 @import "../css/base/pages.scss";
 @import "../css/base/forms.scss";
+@import "../css/base/global.scss";
 
 @tailwind base;
 @tailwind components;

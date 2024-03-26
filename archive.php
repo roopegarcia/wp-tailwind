@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="prose max-w-4xl mx-auto flex-auto font-mono">
+<div class="prose max-w-4xl mx-auto flex-auto">
 <h1 class="max-w-4xl text-center border-2 p-10 mb-8 uppercase border-black bg-teal-400 text-black">These are posts about...
       <?php
       if (is_category()) {
@@ -10,7 +10,7 @@
   </h1>
 </div>
 
-<section class="bg-white dark:bg-gray-900 font-mono">
+<section class="bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
       <!-- <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Team</h2>
