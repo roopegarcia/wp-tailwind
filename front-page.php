@@ -1,13 +1,14 @@
 <?php get_header(); ?>
 
 <div class="prose max-w-4xl mx-auto flex-auto">
-  <h1 class="max-w-4xl text-center border-2 p-10 mb-8 uppercase border-black bg-teal-400 text-black">Pick your topic</h1>  
+  <h1 class="text-center border-2 p-10 mb-8 uppercase border-black bg-teal-400 text-black">Pick your topic</h1>  
 </div>
+
 <section class="bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
 
       <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-
+      <?php wp_reset_postdata(); ?>
       <?php 
         $homePagePosts = new WP_Query(array(
           'posts_per_page' => 1,
@@ -19,7 +20,8 @@
             
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
           <a href="<?php the_permalink(); ?>">
-                  <?php the_post_thumbnail('medium', array(
+          
+                  <?php the_post_thumbnail('post-listing-image', array(
                 'class' => 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg')); 
               ?>
                 </a>
@@ -28,9 +30,10 @@
                   <?php the_title(); ?>
                   </h3></a>
                   <span class="text-gray-500 dark:text-gray-400"><?php the_date( 'F jS, Y', '<h2>', '</h2>' ); ?></span>
+
                   <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"><?php the_excerpt(); ?></p>
                   <ul class="flex space-x-4 sm:mt-0">
-                    <li class="uppercase"><?php the_category(', '); ?></li>
+                    <li class="font-medium uppercase"><?php the_category(', '); ?></li>
                   </ul>
               </div>
           </div>
@@ -40,28 +43,28 @@
       <?php wp_reset_postdata(); ?>
 
       <?php 
-        $homePagePosts = new WP_Query(array(
+        $homePagePosts2 = new WP_Query(array(
           'posts_per_page' => 1,
           'category_name' => 'nutrition'
         ));
 
-        while($homePagePosts->have_posts()) {
-          $homePagePosts->the_post(); ?>
+        while($homePagePosts2->have_posts()) {
+          $homePagePosts2->the_post(); ?>
           
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
           <a href="<?php the_permalink(); ?>">
-                  <?php the_post_thumbnail('medium', array(
+                  <?php the_post_thumbnail('post-listing-image', array(
                 'class' => 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg')); 
               ?>
                 </a>
               <div class="p-5">
-                  <a href="<?php the_permalink(); ?>"><h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <a href="<?php the_permalink(); ?>"><h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <?php the_title(); ?>
                   </h3></a>
                   <span class="text-gray-500 dark:text-gray-400"><?php the_date( 'F jS, Y', '<h2>', '</h2>' ); ?></span>
                   <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"><?php the_excerpt(); ?></p>
                   <ul class="flex space-x-4 sm:mt-0">
-                    <li class="uppercase"><?php the_category(', '); ?></li>
+                    <li class="font-medium uppercase"><?php the_category(', '); ?></li>
                   </ul>
               </div>
           </div>
@@ -69,28 +72,28 @@
       ?>
 
       <?php 
-        $homePagePosts = new WP_Query(array(
+        $homePagePosts3 = new WP_Query(array(
           'posts_per_page' => 1,
           'category_name' => 'life'
         ));
 
-        while($homePagePosts->have_posts()) {
-          $homePagePosts->the_post(); ?>
+        while($homePagePosts3->have_posts()) {
+          $homePagePosts3->the_post(); ?>
           
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
           <a href="<?php the_permalink(); ?>">
-                  <?php the_post_thumbnail('medium', array(
+                  <?php the_post_thumbnail('post-listing-image', array(
                 'class' => 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg')); 
               ?>
                 </a>
               <div class="p-5">
-              <a href="<?php the_permalink(); ?><h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <a href="<?php the_permalink(); ?>"><h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <?php the_title(); ?>
                   </h3></a>
                   <span class="text-gray-500 dark:text-gray-400"><?php the_date( 'F jS, Y', '<h2>', '</h2>' ); ?></span>
                   <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"><?php the_excerpt(); ?></p>
                   <ul class="flex space-x-4 sm:mt-0">
-                    <li class="uppercase"><?php the_category(', '); ?></li>
+                    <li class="font-medium uppercase"><?php the_category(', '); ?></li>
                   </ul>
               </div>
           </div>
@@ -100,22 +103,22 @@
       <?php wp_reset_postdata(); ?>
 
       <?php 
-        $homePagePosts = new WP_Query(array(
+        $homePagePosts4 = new WP_Query(array(
           'posts_per_page' => 1,
           'category_name' => 'music'
         ));
 
-        while($homePagePosts->have_posts()) {
-          $homePagePosts->the_post(); ?>
+        while($homePagePosts4->have_posts()) {
+          $homePagePosts4->the_post(); ?>
           
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
           <a href="<?php the_permalink(); ?>">
-                  <?php the_post_thumbnail('medium', array(
+                  <?php the_post_thumbnail('post-listing-image', array(
                 'class' => 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg')); 
               ?>
                 </a>
               <div class="p-5">
-              <a href="<?php the_permalink(); ?><h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <a href="<?php the_permalink(); ?>"><h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <?php the_title(); ?>
                   </h3></a>
                   <span class="text-gray-500 dark:text-gray-400"><?php the_date( 'F jS, Y', '<h2>', '</h2>' ); ?></span>
@@ -127,7 +130,7 @@
                           </a>
                       </li> -->
                       <ul class="flex space-x-4 sm:mt-0">
-                    <li class="uppercase"><?php the_category(', '); ?></li>
+                    <li class="font-medium uppercase"><?php the_category(', '); ?></li>
                   </ul>
                   </ul>
               </div>
@@ -138,28 +141,28 @@
       <?php wp_reset_postdata(); ?>
 
       <?php 
-        $homePagePosts = new WP_Query(array(
+        $homePagePosts5 = new WP_Query(array(
           'posts_per_page' => 1,
           'category_name' => 'running'
         ));
 
-        while($homePagePosts->have_posts()) {
-          $homePagePosts->the_post(); ?>
+        while($homePagePosts5->have_posts()) {
+          $homePagePosts5->the_post(); ?>
           
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
           <a href="<?php the_permalink(); ?>">
-                  <?php the_post_thumbnail('medium', array(
+                  <?php the_post_thumbnail('post-listing-image', array(
                 'class' => 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg')); 
               ?>
                 </a>
               <div class="p-5">
-              <a href="<?php the_permalink(); ?><h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <a href="<?php the_permalink(); ?>"><h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <?php the_title(); ?>
                   </h3></a>
                   <span class="text-gray-500 dark:text-gray-400"><?php the_date( 'F jS, Y', '<h2>', '</h2>' ); ?></span>
                   <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"><?php the_excerpt(); ?></p>
                   <ul class="flex space-x-4 sm:mt-0">
-                    <li class="uppercase"><?php the_category(', '); ?></li>
+                    <li class="font-medium uppercase"><?php the_category(', '); ?></li>
                   </ul>
               </div>
           </div>
@@ -169,28 +172,28 @@
       <?php wp_reset_postdata(); ?>
 
       <?php 
-        $homePagePosts = new WP_Query(array(
+        $homePagePosts6 = new WP_Query(array(
           'posts_per_page' => 1,
           'category_name' => 'development'
         ));
 
-        while($homePagePosts->have_posts()) {
-          $homePagePosts->the_post(); ?>
+        while($homePagePosts6->have_posts()) {
+          $homePagePosts6->the_post(); ?>
           
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
           <a href="<?php the_permalink(); ?>">
-                  <?php the_post_thumbnail('medium', array(
+                  <?php the_post_thumbnail('post-listing-image', array(
                 'class' => 'w-full rounded-lg sm:rounded-none sm:rounded-l-lg')); 
               ?>
                 </a>
               <div class="p-5">
-              <a href="<?php the_permalink(); ?><h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <a href="<?php the_permalink(); ?>"><h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <?php the_title(); ?>
                   </h3></a>
                   <span class="text-gray-500 dark:text-gray-400"><?php the_date( 'F jS, Y', '<h2>', '</h2>' ); ?></span>
                   <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"><?php the_excerpt(); ?></p>
                   <ul class="flex space-x-4 sm:mt-0">
-                    <li class="uppercase"><?php the_category(', '); ?></li>
+                    <li class="font-medium uppercase"><?php the_category(', '); ?></li>
                   </ul>
               </div>
           </div>
