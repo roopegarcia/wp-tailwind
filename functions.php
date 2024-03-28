@@ -14,6 +14,8 @@ function boilerplate_add_support() {
 add_action('after_setup_theme', 'boilerplate_add_support');
 
 add_image_size( 'banner', 1920, 9999 ); //300 pixels wide (and unlimited height)
+add_image_size( 'post-image', 1500, 450, true );
+add_image_size( 'post-listing-image', 260, 200, true );
 
 
 function register_my_menus() {
@@ -80,3 +82,15 @@ add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
 // Remove Gravity Forms text about required fields
 add_filter( 'gform_required_legend', '__return_empty_string' );
 
+// add_filter( 'comments_number', 'wporg_com_num', 10, 2 );
+// function wporg_com_num ( $out, $num ) { // Two parameter as in filter described
+//     if ( 0 === $num ) { 
+//         $out = 'No Comments so'; // If No comments
+//     } elseif ( 1 === $num ) {
+//         $out = '1 Comment'; // If 1 comment
+//     } else {
+//         $out = $num . ' Comments'; // More than 1 comment
+//     }
+
+//     return _n( '1 Comment', $num . ' Comments', $num );
+// }

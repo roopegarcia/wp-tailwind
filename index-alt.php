@@ -1,13 +1,7 @@
 <?php get_header(); ?>
 
 <div class="prose max-w-4xl mx-auto flex-auto">
-<h1 class="max-w-4xl text-center border-2 p-10 mb-8 uppercase border-black bg-teal-400 text-black">These are posts about...
-      <?php
-      if (is_category()) {
-        single_cat_title();
-      }
-      ?>
-  </h1>
+  <h1 class="max-w-4xl text-center border-2 p-10 mb-8 uppercase border-black bg-teal-400 text-black">Posts... Read 'em all!</h1>  
 </div>
 
 <section class="bg-white dark:bg-gray-900">
@@ -31,27 +25,24 @@
                 </a>
               
               <div class="p-5">
-              <span class="text-gray-500 dark:text-gray-400"><?php the_date( 'F jS, Y', '<h2>', '</h2>' ); ?></span>
-
                   <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br />
                   </h3>
+                  <!-- <p><?php comments_number( 'no responses', 'one response', '% responses' ); ?></p> -->
+                  <span class="text-gray-500 dark:text-gray-400">Posted in: <?php the_category(', '); ?></span>
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"><?php echo wp_trim_words(get_the_content(), 18); ?></p>
+                  <a href="<?php the_permalink(); ?>">Read all about it</a><br />
 
-                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"><?php the_excerpt(); ?></p>
-                  <ul class="flex space-x-4 sm:mt-0">
-                    <li class="font-medium uppercase"><?php the_category(', '); ?></li>
-                  </ul>
+                 
               </div>
           </div>
       </div>
 
     <?php }
   } ?>
-           
       </div>  
   </div>
 </section>
-
 <div class="paginate-archive mb-10 tracking-widest text-xl">
       <!-- Put this where you want the paginate_links to appear -->
       <?php echo paginate_links( array(

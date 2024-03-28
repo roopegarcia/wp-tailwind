@@ -65,6 +65,13 @@
   }
 }
 
+@media (max-width: 500px) {
+  #menu-main-menu {
+    gap: 0.3rem;
+    font-size: 0.7rem;
+  }
+}
+
 
 @media (max-width: 900px) {
   .site-header {
@@ -74,7 +81,8 @@
 
 .current_page_item {
   text-decoration: underline;
-  color: #00c2d9;
+  color: #e91bdb;
+  font-weight: 700;
 }
 
 /* Pivot button rotate */
