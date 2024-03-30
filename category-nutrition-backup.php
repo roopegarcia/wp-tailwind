@@ -20,8 +20,6 @@
       <?php if (have_posts()) {
     while(have_posts()) {
       the_post(); ?>
-      <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-        <!-- <h1 class="text-center border-2 p-10 mb-8 uppercase border-black bg-teal-400 text-black">Pick your topic</h1> -->
         <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
               <a href="<?php the_permalink(); ?>">
                   <!-- <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar"> -->
@@ -35,8 +33,7 @@
                       <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                   </h3>
                   <span class="flex items-center"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
-</svg>
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
 <?php the_date( 'F jS, Y', '<p class="font-thin pl-2">', '</p>' ); ?></span>
 
                   <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"><?php the_excerpt(); ?></p>
@@ -64,7 +61,7 @@
                   </ul> -->
               </div>
           </div>
-      </div>
+     
 
     <?php }
   } ?>

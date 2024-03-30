@@ -1,3 +1,8 @@
+* {
+  text-underline-offset: 4px;
+  scroll-behavior: smooth;
+}
+
 .jebus img{
   box-shadow:
     0 0 60px 30px #fff,  /* inner white */
@@ -38,4 +43,8 @@
   #submit:active {
     position:relative;
     top:1px;
+  }
+
+  .category-nutrition {
+    /* background-color: #44c767; */
   }

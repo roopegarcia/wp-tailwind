@@ -50,3 +50,12 @@
   text-decoration: underline;
   text-underline-offset: 0.25rem;
 }
+
+.category-bg {
+  a {
+    background: rgb(45, 212, 191);
+    color: white;		
+    padding: 0.2rem;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
+  }
+}
