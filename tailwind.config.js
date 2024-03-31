@@ -1,6 +1,7 @@
 module.exports = {
   content: ["./**/*.php", "./src/**/*.js"],
-  plugins: [require("@tailwindcss/typography",)],
+  plugins: [require("@tailwindcss/typography", "@tailwindcss/forms")],
+  
   theme: {
     container: {
       center: true,
