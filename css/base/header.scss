@@ -38,6 +38,15 @@
 #menu-main-menu {
   display: flex;
   gap: 1rem;
+
+  a {
+    text-transform: uppercase;
+  }
+
+  .current_page_parent {
+    text-decoration: underline;
+    font-weight: 700;
+  }
 }
 
 @media (max-width: 960px) {

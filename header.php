@@ -31,7 +31,7 @@
         ?>
       </nav>
           <button href="#" class="pivot uppercase steve-button">pivot</button>
-          <button href="#" class="open-contact pivot uppercase steve-button">Gallup</button>
+          <button href="#" class="open-contact pivot uppercase steve-button">Feedback</button>
         </div>
 </div>
     
