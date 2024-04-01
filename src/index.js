@@ -5,6 +5,7 @@ import Steve from "./scripts/Steve"
 import Modal from "./scripts/Modal"
 import Contact from "./scripts/Contact"
 
-let steve = new Steve();
+
+// let steve = new Steve();
 let modal = new Modal();
 let contact = new Contact();

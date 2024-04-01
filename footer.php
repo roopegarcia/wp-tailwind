@@ -32,7 +32,7 @@
 
       <div class="contact">
         <div class="contact__inner text-center rose max-w-2xl mx-auto flex-auto font-mono">
-          <h2 class="font-mono mb-5 text-black-400 text-5xl font-semibold">Gallup | Contact <br /></h2>
+          <h2 class="font-mono mb-5 text-black-400 text-5xl font-semibold">Contact <br /></h2>
           
           <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
         </div>

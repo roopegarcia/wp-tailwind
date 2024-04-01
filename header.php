@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
   <head>
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="14633398-3797-4d0e-a2d3-198a8d83ec51" data-blockingmode="auto" type="text/javascript"></script>
+  <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="14633398-3797-4d0e-a2d3-198a8d83ec51" data-blockingmode="auto" type="text/javascript"></script> -->
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MMF82FLM6"></script>
 <script>
@@ -23,16 +23,25 @@
       <img class="site-header__logo" width="240" height="100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bttw-logo.png" loading="lazy" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" />
     </a>
   </div>
-  <div class="site-header__inner mb-10">
+
+  <div class="site-header__inner sm-mb-0">
       <nav class="vertical-navigation">
-        <?php  wp_nav_menu (array( 
-        'theme_location' => 'header-menu',
-        'container_class' => 'header_menu_class'
-        ) ); 
-        ?>
+        </div class="header_menu_class">
+              <!-- <?php  wp_nav_menu (array( 
+              'theme_location' => 'header-menu',
+              'container_class' => 'header_menu_class'
+              ) ); 
+              ?> -->
+            <ul id="menu-main-menu">
+                <li <?php if (is_page('Front Page')) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/'); ?>">Home</a></li>
+                <li <?php if (get_post_type() == 'post') echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
+                <li <?php if (is_page(90)) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/who-is-balls-to-the-wall'); ?>">Who am I?</a></li>
+                <li <?php if (is_archive('programs')) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/programs') ?>">Programs</a></li>  
+                <li><a class="open-contact" href="#">Feedback</a></li>   
+            </ul>
+          </div>
       </nav>
-          <button href="#" class="pivot uppercase steve-button">pivot</button>
-          <button href="#" class="open-contact pivot uppercase steve-button">Feedback</button>
-        </div>
+    </div>
+
 </div>
     

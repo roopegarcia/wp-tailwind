@@ -1,6 +1,7 @@
 module.exports = {
-  content: ["./**/*.php", "./src/**/*.js"],
-  plugins: [require("@tailwindcss/typography", "@tailwindcss/forms")],
+  content: ["./**/*.php", "./src/**/*.js", "./node_modules/flowbite/**/*.js"],
+
+  plugins: [require("@tailwindcss/typography", "@tailwindcss/forms", "require('flowbite/plugin')")],
   
   theme: {
     container: {

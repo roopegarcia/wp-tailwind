@@ -43,7 +43,12 @@
     text-transform: uppercase;
   }
 
-  .current_page_parent {
+  .current_page_item {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+
+  .current-menu-item {
     text-decoration: underline;
     font-weight: 700;
   }
@@ -67,6 +72,7 @@
 @media (max-width: 700px) {
   .vertical-navigation {
     top: 1rem;
+    padding-left: 0.2rem;
   }
 
   body {
