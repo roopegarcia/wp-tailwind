@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
   <head>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="14633398-3797-4d0e-a2d3-198a8d83ec51" data-blockingmode="auto" type="text/javascript"></script>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MMF82FLM6"></script>
 <script>
