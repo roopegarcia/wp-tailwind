@@ -3,10 +3,8 @@
     height: 40vh;
     max-width: 100%;
     object-fit: cover;
-    /*border: 4px solid rgb(44, 49, 134); */
 
   }
-  /* border: 4px solid sandybrown; */
 }
 
 .front-page {
@@ -15,3 +13,98 @@
     text-decoration: none;
   }
 }
+
+.postid-771 {
+    background: url('../img/athlete.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    position: relative;
+    z-index: -1;
+    .bg-layer {
+      background-color: #ffffff;
+      opacity: 0.8;
+      padding: 1rem;
+    }
+    .site-header {
+      #menu-main-menu {
+        text-shadow: 5px 2px #000000;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .postid-809 {
+    background: url('../img/rg-bg.webp') no-repeat center center fixed;
+    background-size: cover;
+
+    position: relative;
+    z-index: -1;
+    .bg-layer {
+      background-color: #ffffff;
+      opacity: 0.8;
+      padding: 1rem;
+    }
+    .site-header {
+      #menu-main-menu {
+        text-shadow: 5px 2px #000000;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .postid-763 {
+    background: url('../img/arnold.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    position: relative;
+    z-index: -1;
+    .bg-layer {
+      background-color: #ffffff;
+      opacity: 0.8;
+      padding: 1rem;
+    }
+    .site-header {
+      #menu-main-menu {
+        text-shadow: 5px 2px #000000;
+        color: #fff;
+      }
+    }
+  }
+
+  .postid-816 {
+    background: url('../img/db-01.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    position: relative;
+    z-index: -1;
+    .bg-layer {
+      background-color: #ffffff;
+      opacity: 0.8;
+      padding: 1rem;
+    }
+    .site-header {
+      #menu-main-menu {
+        text-shadow: 5px 2px #000000;
+        color: #fff;
+      }
+    }
+  }
+
+  .postid-843 {
+    background: url('../img/dl.jpeg') no-repeat center center fixed;
+    background-size: cover;
+
+    position: relative;
+    z-index: -1;
+    .bg-layer {
+      background-color: #ffffff;
+      opacity: 0.8;
+      padding: 1rem;
+    }
+    .site-header {
+      #menu-main-menu {
+        text-shadow: 5px 2px #000000;
+        color: #ffffff;
+      }
+    }
+  }
