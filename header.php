@@ -4,13 +4,13 @@
 <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="14633398-3797-4d0e-a2d3-198a8d83ec51" data-blockingmode="auto" type="text/javascript"></script> -->
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MMF82FLM6"></script>
-<script>
+<!-- <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-5MMF82FLM6');
-</script>
+</script> -->
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,7 +20,7 @@
   <div class="max-w-screen-xl site-header px-10 mb-10 mx-auto pivot-content">
   <div class="site-header__branding">
     <a href="<?php echo esc_url(home_url('/')); ?>" class="site-header__title" rel="home" itemprop="headline">
-      <img class="site-header__logo" width="240" height="100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bttw-logo-alt.png" loading="lazy" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" />
+      <img class="site-header__logo" width="240" height="100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-got.png" loading="lazy" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" />
     </a>
   </div>
 

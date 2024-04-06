@@ -1,8 +1,10 @@
 .site-header {
+  background: #171717;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   align-items: center;
+  color: #fff;
 }
 
 .site-header__branding {

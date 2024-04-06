@@ -108,3 +108,22 @@
       }
     }
   }
+
+  .postid-917 {
+    background: url('../img/arnold-barbell-curl.jpeg') no-repeat center center fixed;
+    background-size: cover;
+
+    position: relative;
+    z-index: -1;
+    .bg-layer {
+      background-color: #ffffff;
+      opacity: 0.8;
+      padding: 1rem;
+    }
+    .site-header {
+      #menu-main-menu {
+        text-shadow: 5px 2px #000000;
+        color: #ffffff;
+      }
+    }
+  }

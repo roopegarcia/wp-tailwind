@@ -1,7 +1,7 @@
-<div class="footer">
-  <div class="p-10 text-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+<div class="footer max-w-screen-xl mx-auto text-white">
+  <div class="p-10 text-center">
     <div class="footer-content">
-      <p class="amazing-footer-class text-center">This WordPress site is crafted with my own cold hands. I'm coding as i go. So if this looks like it's work in progress. It really is 🥳</p>
+      <p class="amazing-footer-class text-center text-white">This WordPress site is crafted with my own cold hands. I'm coding as i go. So if this looks like it's work in progress. It really is 🥳</p>
     </div>
     <div class="footer-content__inner pt-5">
 
@@ -21,7 +21,7 @@
 
 <div class="modal">
         <div class="modal__inner">
-          <h2 class="font-mono mb-5 text-black-400 text-5xl font-semibold">Disclaimer <br /></h2>
+          <h2 class="font-mono mb-5 text-white-400 text-5xl font-semibold">Disclaimer <br /></h2>
           <div class="wrapper wrapper--narrow">
             <p class="mb-5 modal__description">This website contains partial nudity and hot pictures of a very handsome man. You do NOT need to feel bad about yourself. Take it as it is. If it was easy, everyone would look like that. </p>
           </div>

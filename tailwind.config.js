@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./**/*.php", "./src/**/*.js", "./node_modules/flowbite/**/*.js"],
+  content: ["./**/*.php", "./src/**/*.js", "./node_modules/flowbite/**/*.js", "darkMode: 'selector'",],
 
   plugins: [require("@tailwindcss/typography", "@tailwindcss/forms", "require('flowbite/plugin')")],
   
