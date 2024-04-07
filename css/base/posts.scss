@@ -53,9 +53,10 @@
 
 .category-bg {
   a {
-    background: rgb(45, 212, 191);
-    color: white;		
+    /* background: rgb(45, 212, 191); */
+    color: black;		
     padding: 0.2rem;
+    border: 2px solid black;
     box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
   }
 }
