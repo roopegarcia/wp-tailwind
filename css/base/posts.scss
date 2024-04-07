@@ -60,3 +60,21 @@
     box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
   }
 }
+
+.fatty-images-border {
+  img {
+    border: 8px solid #000;
+  }
+}
+
+.image-scale {
+  img {
+    transition: opacity .3s ease-out,transform .3s ease-out;
+  }
+  img:hover {
+    cursor: zoom-in;
+    opacity: .8;
+    transform: scale(1.2875) rotate(4deg);
+  }
+}
+  
