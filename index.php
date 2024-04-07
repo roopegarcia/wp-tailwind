@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="prose max-w-4xl mx-auto flex-auto">
-  <h1 class="max-w-4xl text-center border-2 p-10 mb-8 uppercase border-black bg-teal-400 text-black">Posts... Read 'em all!</h1>  
+  <h1 class="max-w-4xl text-center border-2 p-10 mb-8 uppercase border-black text-black">Posts... Read 'em all!</h1>  
 </div>
 
 <section class="bg-white dark:bg-gray-900">
@@ -27,21 +27,20 @@
                   <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"><?php the_excerpt(); ?></p>
               </div>
           </div>
-      
-
     <?php }
   } ?>
       </div>  
   </div>
 </section>
+
 <div class="paginate-archive mb-10 tracking-widest text-xl">
-      <!-- Put this where you want the paginate_links to appear -->
-      <?php echo paginate_links( array(
+  <!-- Put this where you want the paginate_links to appear -->
+  <?php echo paginate_links( array(
 
-      'prev_text' => '<span></span>',
-      'next_text' => '<span></span>'
+  'prev_text' => '<span></span>',
+  'next_text' => '<span></span>'
 
-      )); ?>
-    </div>
+  )); ?>
+</div>
 
 <?php get_footer(); ?>

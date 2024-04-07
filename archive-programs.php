@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="prose max-w-4xl mx-auto flex-auto">
-  <h1 class="max-w-4xl text-center border-2 p-10 mb-8 uppercase border-black bg-teal-400 text-black">Programs!</h1>  
+  <h1 class="max-w-4xl text-center border-2 p-10 mb-8 uppercase border-black text-black">Programs!</h1>  
 </div>
 
 <section class="bg-white dark:bg-gray-900 font-mono">
@@ -14,13 +14,10 @@
   <span class="absolute inset-0 border-2 border-dashed border-black"></span>
 
   <div
-    class="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
-  >
+    class="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
     <div
-      class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8"
-    >
+      class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="180" height="180" viewBox="0 0 256 256" xml:space="preserve">
-
 <defs>
 </defs>
 <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
@@ -42,6 +39,7 @@
 </svg>
 
       <h2 class="mt-4 text-xl font-medium sm:text-2xl"><?php the_title(); ?></h2>
+      
     </div>
 
     <div
@@ -63,14 +61,14 @@
       </div>  
   </div>
 </section>
-<!-- <div class="paginate-archive mb-10 tracking-widest text-xl">
-      Put this where you want the paginate_links to appear
-      <?php echo paginate_links( array(
+<div class="paginate-archive mb-10 tracking-widest text-xl">
+  <!-- Put this where you want the paginate_links to appear -->
+  <?php echo paginate_links( array(
 
-      'prev_text' => '<span></span>',
-      'next_text' => '<span></span>'
+  'prev_text' => '<span></span>',
+  'next_text' => '<span></span>'
 
-      )); ?>
-    </div> -->
+  )); ?>
+</div>
 
 <?php get_footer(); ?>
