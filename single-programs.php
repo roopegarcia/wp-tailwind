@@ -16,9 +16,9 @@
 
             <!-- start your html here -->
       <div class="flex items-center mb-10">
-        <div class="w-24 rounded-2xl overflow-hidden text-center shrink-0 bg-teal-500">
+        <div class="w-24 rounded-2xl overflow-hidden text-center shrink-0 bg-stone-500">
           <span class="text-white block text-xl uppercase leading-8"><?php the_time('M'); ?></span>
-          <span class="block bg-teal-100 text-teal-700 text-5xl py-2"><span class="relative bottom-1"><?php the_time('d'); ?></span></span>
+          <span class="block bg-stone-100 text-stone-700 text-5xl py-2"><span class="relative bottom-1"><?php the_time('d'); ?></span></span>
         </div>
         <div class="pl-6">
           <h1 class="text-3xl sm:text-4xl font-bold"><?php the_title(); ?></h1>

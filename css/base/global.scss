@@ -48,3 +48,14 @@
   .category-nutrition {
     /* background-color: #44c767; */
   }
+
+  /* Modern Family logo styles */
+  .modern-family {
+    display: flex;
+    .modern {
+      color: #000;
+    }
+    .family {
+      color: #f05423;
+    }
+  }
