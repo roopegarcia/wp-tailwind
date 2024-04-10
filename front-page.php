@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
 <div class="prose max-w-4xl mx-auto flex-auto">
-  <h1 class="text-center border-2 p-10 mb-8 uppercase border-black text-black">Pick your topic</h1>  
+  <h1 class="text-center unnderline p-10 mb-8 uppercase border-black text-black">Pick your topic</h1>  
 </div>
+<div class="showcase prose max-w-4xl mx-auto flex-auto">
+  <?php the_field('showcase'); ?>
+</div>
+
 
 <section class="bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">

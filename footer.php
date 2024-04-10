@@ -21,7 +21,7 @@
 
 <div class="modal">
         <div class="modal__inner">
-          <h2 class="font-mono mb-5 text-white-400 text-5xl font-semibold">Disclaimer <br /></h2>
+          <h2 class="mb-5 text-white-400 text-5xl font-semibold">Disclaimer <br /></h2>
           <div class="wrapper wrapper--narrow">
             <p class="mb-5 modal__description">This website contains partial nudity and hot pictures of a very handsome man. You do NOT need to feel bad about yourself. Take it as it is. If it was easy, everyone would look like that. </p>
           </div>
@@ -31,8 +31,8 @@
       </div>
 
       <div class="contact">
-        <div class="contact__inner text-center rose max-w-2xl mx-auto flex-auto font-mono">
-          <h2 class="font-mono mb-5 text-black-400 text-5xl font-semibold">Contact <br /></h2>
+        <div class="contact__inner text-center rose max-w-2xl mx-auto flex-auto">
+          <h2 class="mb-5 text-black-400 text-5xl font-semibold">Contact <br /></h2>
           
           <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
         </div>

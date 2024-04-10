@@ -9,7 +9,7 @@
     
       <div class="class-tba prose max-w-4xl mx-auto flex-auto">
       <div class="prose max-w-4xl mx-auto flex-auto">
-  <h1 class="text-center border-2 p-10 mb-8 uppercase border-black text-black"><?php the_title(); ?></h1>  
+  <h1 class="text-center p-10 mb-8 uppercase border-black text-black"><?php the_title(); ?></h1>  
 </div>
 <p class="text-gray-500 dark:text-gray-400">Last update: <?php the_field('post_date');?></p>
 

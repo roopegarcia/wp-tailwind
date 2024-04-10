@@ -77,3 +77,16 @@
     cursor: pointer;
   }
 }
+
+#field_1_10 {
+  text-align: left !important;
+}
+
+.ginput_container.ginput_container_consent {
+  
+    .gform-field-label.gform-field-label--type-inline.gfield_consent_label {
+      a {
+        text-decoration: underline !important;
+      }
+  }
+}

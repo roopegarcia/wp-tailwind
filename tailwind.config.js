@@ -4,6 +4,9 @@ module.exports = {
   plugins: [require("@tailwindcss/typography", "@tailwindcss/forms", "require('flowbite/plugin')")],
   
   theme: {
+    fontFamily: {
+      'sans': ['IBM Plex Sans', 'sans-serif',],
+    },
     container: {
       center: true,
     },

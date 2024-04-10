@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="prose max-w-4xl mx-auto flex-auto">
-  <h1 class="max-w-4xl text-center border-2 p-10 mb-8 uppercase border-black text-black">Programs!</h1>  
+  <h1 class="max-w-4xl text-center p-10 mb-8 uppercase border-black text-black">Programs!</h1>  
 </div>
 
 <section class="bg-white dark:bg-gray-900 font-mono">
