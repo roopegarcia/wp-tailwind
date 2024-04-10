@@ -156,5 +156,5 @@ function the_breadcrumb() {
     }
 }
 /*
-* Credit: http://www.thatweblook.co.uk/blog/tutorials/tutorial-wordpress-breadcrumb-function/
+* Credit: https://gist.github.com/tinotriste/5387124
 */

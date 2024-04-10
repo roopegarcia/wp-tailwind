@@ -1,6 +1,7 @@
 .footer {
   opacity: 0.9;
   background:  #191919;
+  color: rgb(212 212 212);
 }
 
 .instagram-icon::after {
@@ -21,6 +22,17 @@
   position: relative;
   width: 100%;
   top: 5px;
+  left: 3px;
+  z-index: 9;
+}
+
+.github-icon::after {
+  content: url('../img/icon-github.svg');
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  top: 7px;
   left: 3px;
   z-index: 9;
 }

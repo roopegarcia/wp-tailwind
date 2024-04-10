@@ -26,7 +26,7 @@
         </div>
       </div>
         
-        <span class="prose"><?php the_content(); ?></span>
+        <span class="text-base prose"><?php the_content(); ?></span>
       </div>
     <?php }
   } ?>

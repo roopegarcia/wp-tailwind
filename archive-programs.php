@@ -10,13 +10,13 @@
       <?php if (have_posts()) {
     while(have_posts()) {
       the_post(); ?>
-      <a href="<?php the_permalink(); ?>" class="group relative block h-64 sm:h-80 lg:h-96">
-  <span class="absolute inset-0 border-2 border-dashed border-black"></span>
+      <a href="<?php the_permalink(); ?>" class="rounded-lg group relative block h-64 sm:h-80 lg:h-96 ">
+  <span class="absolute inset-0 border-2 border-dashed border-slate rounded-lg"></span>
 
   <div
-    class="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+    class="relative flex h-full transform items-end border-2 border border-slate rounded-lg bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
     <div
-      class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+      class="p-4 pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="180" height="180" viewBox="0 0 256 256" xml:space="preserve">
 <defs>
 </defs>

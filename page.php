@@ -16,7 +16,7 @@
         <?php the_post_thumbnail('post-image', array(
             'class' => 'steve')); 
             ?>
-          <div class=""><?php the_content(); ?></div>
+          <div class="text-base"><?php the_content(); ?></div>
           <!-- <p class="goback-arrow mt-5 mb-5 p-2 steve-button text-white"><?php echo get_the_category_list(', ') ?></p> -->
           <button class="font-sans uppercase goback-arrow mt-5 mb-5 p-2"><a href="<?php echo site_url('/'); ?>">Home</a></button>
 

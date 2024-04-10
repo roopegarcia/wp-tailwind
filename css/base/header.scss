@@ -18,6 +18,12 @@
   align-items: center;
 }
 
+.showcase {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
 /* .vertical-navigation weird bug with MacBook Safari with vertical-rl text{
   margin-top: 2rem;
   position: absolute;

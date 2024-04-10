@@ -11,6 +11,7 @@
 </div>
 
 <section class="bg-white dark:bg-gray-900">
+  
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
       <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
       <?php if (have_posts()) {
@@ -51,7 +52,7 @@
     <?php }
   } ?>
       </div>  
-      <ul class="flex mt-4"><?php the_breadcrumb(); ?></ul>
+      <!-- <ul class="flex mt-4"><?php the_breadcrumb(); ?></ul> -->
   </div>
   
 </section>
@@ -62,9 +63,12 @@
       <?php echo paginate_links( array(
 
       'prev_text' => '<span></span>',
-      'next_text' => '<span></span>'
+      'next_text' => '<span></span>',
 
       )); ?>
+    
     </div>
-
+    <!-- <div class="paginate-archive">
+    <button class="flex center"><a href="<?php site_url('/blog'); ?>" class="font-sans bold uppercase goback-arrow mt-5 mb-5 p-2"><?php site_url('/blog'); ?>Blog</a></button>
+    </div> -->
 <?php get_footer(); ?>

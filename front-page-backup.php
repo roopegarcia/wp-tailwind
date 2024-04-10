@@ -4,7 +4,7 @@
   <h1 class="text-center border-2 p-10 mb-8 uppercase border-black text-black">Pick your topic</h1>  
 </div>
 
-<section class="bg-white dark:bg-gray-900">
+<section class="text-base bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
 
       <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
