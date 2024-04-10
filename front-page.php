@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="prose max-w-4xl mx-auto flex-auto">
+<div class="prose max-w-4xl mx-auto flex-auto text-slate-400">
   <h1 class="text-center p-10 mb-8 uppercase border-black text-black">Pick your topic</h1>
 </div>
 
@@ -16,7 +16,7 @@
       <?php 
         $homePageMain = new WP_Query(array(
           'posts_per_page' => 1,
-          'category_name' => 'cut24'
+          'category_name' => 'final-cut'
         ));
 
         while($homePageMain->have_posts()) {

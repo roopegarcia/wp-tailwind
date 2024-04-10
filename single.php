@@ -17,7 +17,6 @@
             ?> -->
           <div class=""><?php the_content(); ?></div>
           <button class="paginate-archive font-sans uppercase goback-arrow mt-5 mb-5 p-2"><?php the_category(',  '); ?></button>
-          
         </div>
       <?php }
   } ?>
