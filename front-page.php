@@ -4,9 +4,9 @@
   <h1 class="text-center p-10 mb-8 uppercase border-black text-black">Pick your topic</h1>
 </div>
 
-  <div class="showcase">
+  <div class="showcase mx-auto text-center uppercase border-black text-black">
   <span><?php the_field('showcase'); ?></span>
-  <span><?php the_field('showcase_name'); ?></span>
+  <span class="mt-4 text-bold showcase-name"><?php the_field('showcase_name'); ?></span>
 </div>
 
 <section class="bg-white dark:bg-gray-900">
