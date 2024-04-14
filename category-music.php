@@ -2,7 +2,7 @@
 
 <div class="prose max-w-4xl mx-auto flex-auto text-slate">
   <h1 class="text-center p-10 mb-8 uppercase border-black text-black">Music</h1>
-  <h3 class="text-center uppercase text-slate-500">"The day that i'll die it'll be day that i <br />
+  <h3 class="text-center uppercase text-slate-500">"The day that i'll die it'll be the day that i <br />
 shut my mouth and put down my guitar"</h3>
 </div>
 
