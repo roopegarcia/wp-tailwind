@@ -1,12 +1,24 @@
 <?php get_header(); ?>
 
 <div class="prose max-w-4xl mx-auto flex-auto">
-  <h1 class="max-w-4xl text-center p-10 mb-8 uppercase border-black text-black">Posts... Read 'em all!</h1>  
+  <h1 class="max-w-4xl text-center p-10 mb-8 uppercase text-black">Posts... Read 'em all!</h1>
+
+    <!-- <?php wp_list_categories(', '); ?> -->
+    <ul class="max-w-4xl mx-auto flex-auto steve list-none gap-4 uppercase">
+	<?php wp_list_categories( array(
+		'orderby' => 'name',
+    'class' => '',
+    'title_li' => __( '' ),
+    'hide_title_if_empty' => true,
+	) ); ?> 
+</uö>
+
 </div>
 
 <section class="bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
       <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+        
       <?php if (have_posts()) {
     while(have_posts()) {
       the_post(); ?>

@@ -23,6 +23,7 @@
         <div class="pl-6">
           <h1 class="text-3xl sm:text-4xl font-bold"><?php the_title(); ?></h1>
           <p class="text-xl text-gray-400">Gender: <?php the_field('gender'); ?></p>
+          <p class="text-xl text-gray-400">Level: <?php the_field('level'); ?></p>
         </div>
       </div>
         
@@ -31,7 +32,8 @@
     <?php }
   } ?>
 
-  <a class="no-underline " href="<?php echo get_post_type_archive_link('programs'); ?>"><button class="goback-arrow mt-5 mb-5 p-2">BACK</button></a>
+  <!-- <a class="no-underline" href="<?php echo get_post_type_archive_link('programs'); ?>"><button class="goback-arrow mt-10 mb-5 p-2">BACK</button></a> -->
+
 </div>
 
 

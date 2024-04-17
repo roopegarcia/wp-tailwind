@@ -68,7 +68,9 @@
       )); ?>
     
     </div>
-    <!-- <div class="paginate-archive">
-    <button class="flex center"><a href="<?php site_url('/blog'); ?>" class="font-sans bold uppercase goback-arrow mt-5 mb-5 p-2"><?php site_url('/blog'); ?>Blog</a></button>
-    </div> -->
+    <div class="paginate-archive">
+    <button class="flex center"><a href="<?php echo site_url('/blog'); ?>" class="font-sans bold uppercase goback-arrow mt-5 mb-5 p-2">Blog</a></button>
+    </div>
+    <!-- <button class="paginate-archive font-sans uppercase goback-arrow mt-5 mb-5 p-2"><?php the_category(',  '); ?></button> -->
+
 <?php get_footer(); ?>

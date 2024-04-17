@@ -52,13 +52,32 @@
 }
 
 .category-bg {
+ 
   a {
     /* background: rgb(45, 212, 191); */
+    color: black;		
+    padding: 0.3rem 1rem;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    list-style: none;
+    min-width: 8rem;
+    text-align: center;
+  }
+}
+
+.cat-item {
     color: black;		
     padding: 0.2rem;
     border: 2px solid black;
     box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
-  }
+    list-style: none;
+    min-width: 8rem;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+    }
 }
 
 .fatty-images-border {

@@ -1,4 +1,4 @@
-<div class="footer max-w-screen-xl mx-auto mt-10 rounded-lg">
+<div class="footer max-w-screen-xl mx-auto mt-10">
   <div class="p-10 text-center">
     <div class="footer-content">
       <p class="amazing-footer-class text-cent">This WordPress site is crafted with my own cold hands. I'm coding as i go. So if this looks like it's work in progress. It really is 🥳</p>
