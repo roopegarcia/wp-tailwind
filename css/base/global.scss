@@ -59,3 +59,12 @@
       color: #f05423;
     }
   }
+
+  /* Table styles */
+  table {
+    tr {
+      td {
+        min-width: 5rem;
+      }
+    }
+  }
