@@ -20,7 +20,9 @@
   <div class="flex max-w-screen-xl site-header p-8 mb-10 mx-auto pivot-content">
   <div class="site-header__branding">
     <a href="<?php echo esc_url(home_url('/')); ?>" class="site-header__title" rel="home" itemprop="headline">
-      <img class="site-header__logo" width="240" height="100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/log-1-alt.png" loading="lazy" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" />
+      <!-- <img class="site-header__logo" width="240" height="100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/log-1-alt.png" loading="lazy" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" /> -->
+      <img class="site-header__logo pb-8" width="300" height="100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-add-1.png" loading="lazy" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" />
+
     </a>
   </div>
 

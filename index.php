@@ -3,15 +3,15 @@
 <div class="prose max-w-4xl mx-auto flex-auto">
   <h1 class="max-w-4xl text-center p-10 mb-8 uppercase text-black">Posts... Read 'em all!</h1>
 
-    <!-- <?php wp_list_categories(', '); ?> -->
-    <ul class="max-w-4xl mx-auto flex-auto steve list-none gap-4 uppercase">
+  <!-- <div class="cats flex">
+    <!-- <?php wp_list_categories(', '); ?>
 	<?php wp_list_categories( array(
 		'orderby' => 'name',
     'class' => '',
     'title_li' => __( '' ),
     'hide_title_if_empty' => true,
-	) ); ?> 
-</uö>
+	) ); ?>
+  </div> -->
 
 </div>
 
